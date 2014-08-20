@@ -11,11 +11,7 @@ var HelloWorldLayer = cc.Layer.extend({
         var screenSize = cc.director.getWinSize();
 
         //给游戏添加背景
-        var background = cc.Sprite.create("res/bg.png");
-        background.setPosition(cc.p(screenSize.width / 2,screenSize.height / 2));
-        this.addChild(background, 0);
-
-        //创建一个精灵角色
+                //创建一个精灵角色
         var sprite = cc.Sprite.create("res/bird1.png");
         sprite.setPosition(cc.p(screenSize.width / 2,screenSize.height / 2));
         this.addChild(sprite, 0);
